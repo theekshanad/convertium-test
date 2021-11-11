@@ -1,0 +1,120 @@
+.carouselWraper{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    animation: fadeInCarouselWraper 700ms linear;
+}
+.bgImgWraper{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.bgImg{
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.carouselBlock{
+    width: 700px;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 10%;
+    .title{
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        h2{
+            color: rgba(255,255,255, 0.8);
+        }
+    }
+    .slide{
+        width: 175px;
+        height: 175px;
+        background:rgba(255,255,255, 0.5);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 15px;
+        h6{
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .prev{
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        left: -50px;
+        top:115px;
+        padding:8px 0 8px 10px;
+        cursor: pointer;
+        z-index: 50;
+    }
+    .next{
+        width: 30px;
+        height: 40px;
+        position: absolute;
+        right: -50px;
+        top:115px;
+        padding:8px 0;
+        cursor: pointer;
+        z-index: 50;
+    }
+    .arrowRight{
+        border: solid #FFFFFF;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 10px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transition: all .3s ease-in-out;
+        &:hover{
+            border: solid rgb(141, 141, 255);
+            border-width: 0 3px 3px 0;
+        }
+    }
+    .arrowLeft{
+        border: solid #FFFFFF;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 10px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        transition: all .3s ease-in-out;
+        &:hover{
+            border: solid rgb(141, 141, 255);
+            border-width: 0 3px 3px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .carouselBlock{
+        width: 100%;
+        right: 0;
+        padding: 0 50px 0 20px;
+        .prev{
+            left: 10px;
+        }
+        .next{
+            right: 10px;
+        }
+    }   
+    
+}
+
+@keyframes fadeInCarouselWraper {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,45 @@
+{
+    "firstName": "Joe",
+    "topLink": {
+        "text": "Discover More",
+        "url": "https://www.w3schools.com/"
+    },
+    "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "animateText": [
+        {
+            "title": "Lorem ipsum dolor",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "title": "Sed ut perspiciatis",
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+        },
+        {
+            "title": "At vero eos et accusamus",
+            "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque"
+        }
+    ],
+    "carouselTitle": "DONEC NEC JUSTO",
+    "carouselItems": [
+        {
+            "title": "Lorem ipsum #1",
+            "description": "quae ab illo inventore veritatis et quasi quae ab illo inventore veritatis et quasi veritatis et quasi"
+        },
+        {
+            "title": "Cupidatat non #2",
+            "description": "magni dolores eos qui ratione sequi magni dolores eos qui ratione sequi magni dolores inventore"
+        },
+        {
+            "title": "Kunde omnis #3",
+            "description": "quis nostrum exercitationem ullam corporis suscipit magni dolores eos qui ratione ullam"
+        },
+        {
+            "title": "Nbeatae vitae #4",
+            "description": "Excepteur sint occaecat cupidatat non proident magni dolores eos qui ratione non "
+        },
+        {
+            "title": "Magni dolores #5",
+            "description": "qui dolorem ipsum quia dolor sit amet magni dolores eos qui ratione sequi qui ratione proident"
+        }
+    ]
+}

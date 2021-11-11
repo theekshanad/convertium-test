@@ -1,0 +1,136 @@
+
+
+.navWraper{
+    overflow: hidden;
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.navShow{
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: #FFFFFF;
+    z-index: 20;
+    transition: all .3s ease-in-out;
+    transform: translateX(0);
+}
+.navHide{
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right: 0;
+    background: #FFFFFF;
+    z-index: 20;
+    transition: all .3s ease-in-out;
+    transform: translateX(250px);
+}
+
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+      }
+      &:before, &:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #333;
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+  }
+
+.navItem{
+    padding: 100px 50px 0;
+    margin: 0;
+    list-style: none;
+    li{
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &:hover{
+            color:rgb(141, 141, 255);
+        }
+    }
+}
+
+.hambuger{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:0;
+    bottom: 0;
+    right:0;
+    margin: auto;
+    z-index: 30;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    animation: fadeInHamlWraper 700ms linear;
+    &:hover{
+        &:after{
+            background: rgb(29, 29, 247);
+        }
+        &:before{
+            background: #FFFFFF;
+        }
+    }
+    &:after{
+        content: "";
+        display: block;
+        height: 8px;
+        width: 100%;
+        background: rgb(141, 141, 255);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: all .3s ease-in-out;
+    }
+    &:before{
+        content: "";
+        display: block;
+        height: 4px;
+        width: 50%;
+        background: rgba(255,255,255, 0.8);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hambuger{
+        top: -350px;
+    }
+}
+
+@keyframes fadeInHamlWraper {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
